@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel ="stylesheet" type = "text/css" href = "style.css">
+</head>
+<body id="index">
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Ywan GERARD</div>
+            <ul class="nav-links">
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#languages">Langages</a></li>
+                <li><a href="#diplomas">Diplômes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section À Propos -->
+    <section id="about">
+        <h2>À Propos</h2>
+        <div class="contact-info">
+            <div class="contact-card">
+                <h3>📧 Email</h3>
+                <p>votre.email@exemple.com</p>
+            </div>
+            <div class="contact-card">
+                <h3>📱 Téléphone</h3>
+                <p>+33 1 23 45 67 89</p>
+            </div>
+            <div class="contact-card">
+                <h3>📍 Localisation</h3>
+                <p>Paris, France</p>
+            </div>
+            <div class="contact-card">
+                <h3>💼 LinkedIn</h3>
+                <p>linkedin.com/in/profil</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills">
+        <h2>Mes Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card" onclick="openSkillModal('Développement Web')">
+                <div class="skill-icon">🌐</div>
+                <h3>Développement Web</h3>
+                <p>Création de sites web modernes et responsives</p>
+            </div>
+            <div class="skill-card" onclick="openSkillModal('Data Science')">
+                <div class="skill-icon">📊</div>
+                <h3>Data Science</h3>
+                <p>Analyse de données et machine learning</p>
+            </div>
+            <div class="skill-card" onclick="openSkillModal('Gestion de Projet')">
+                <div class="skill-icon">📋</div>
+                <h3>Gestion de Projet</h3>
+                <p>Pilotage et coordination d'équipes</p>
+            </div>
+            <div class="skill-card" onclick="openSkillModal('Design UX/UI')">
+                <div class="skill-icon">🎨</div>
+                <h3>Design UX/UI</h3>
+                <p>Conception d'interfaces utilisateur</p>
+            </div>
+            <div class="skill-card" onclick="openSkillModal('Cybersécurité')">
+                <div class="skill-icon">🔒</div>
+                <h3>Cybersécurité</h3>
+                <p>Sécurisation des systèmes informatiques</p>
+            </div>
+            <div class="skill-card" onclick="openSkillModal('DevOps')">
+                <div class="skill-icon">⚙️</div>
+                <h3>DevOps</h3>
+                <p>Automatisation et déploiement continu</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Langages -->
+    <section id="languages">
+        <h2>Langages de Programmation</h2>
+        <div class="languages-grid">
+            <div class="language-item">
+                <div class="language-circle" onclick="openInNewTab('Python.html')"><img src="images/python.png" alt=""></div>
+                <div class="language-name">Python</div>
+            </div>
+            <div class="language-item">
+                <div class="language-circle" onclick="openInNewTab('C.html')"><img src="images/C.png" alt=""></div>
+                <div class="language-name">C</div>
+            </div>
+            <div class="language-item">
+                <div class="language-circle" onclick="openInNewTab('Java.html')"><img src="images/java.png" alt=""></div>
+                <div class="language-name">Java</div>
+            </div>
+            <div class="language-item">
+                <div class="language-circle" onclick="openInNewTab('php.html')"><img src="images/php.png" alt=""></div>
+                <div class="language-name">PHP</div>
+            </div>
+            <div class="language-item">
+                <div class="language-circle" onclick="openInNewTab('SQL.html')"><img src="images/sql.png" alt=""></div>
+                <div class="language-name">SQL</div>
+            </div>
+            <div class="language-item">
+                <div class="language-circle" onclick="openInNewTab('Bash.html')"><img src="images/bash.png" alt=""></div>
+                <div class="language-name">Bash</div>
+            </div>
+            <div class="language-item">
+                <div class="language-circle" onclick="openInNewTab('vba.html')"><img src="images/vba.png" alt=""></div>
+                <div class="language-name">VBA</div>
+            </div>
+            <div class="language-item">
+                <div class="language-circle" onclick="openInNewTab('HTML.html')"><img src="images/html.png" alt=""></div>
+                <div class="language-name">HTML</div>
+            </div>
+            <div class="language-item">
+                <div class="language-circle" onclick="openInNewTab('CSS.html')"><img src="images/css.png" alt=""></div>
+                <div class="language-name">CSS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Diplômes -->
+    <section id="diplomas">
+        <h2>Mes Diplômes</h2>
+        <div class="diplomas-grid">
+            <div class="diploma-card" onclick="openDplomeModal('Diplome du JLPT')">
+                <div class="diploma-icon">🗾</div>
+                <h3>JLPT</h3>
+
+                <p>Certification de compétence en langue japonaise</p>
+            </div>
+            <div class="diploma-card" onclick="openDplomeModal('Concours d\'expression orale du Rotary')">
+                <div class="diploma-icon">🎤</div>
+                <h3>Concours d'Éloquence</h3>
+                <p>Lauréat du concours d'éloquence</p>
+            </div>
+            <div class="diploma-card" onclick="openDplomeModal('Prix de NSI du Lycée Naval')">
+                <div class="diploma-icon">🏆</div>
+                <h3>Prix de NSI du Lycée Naval</h3>
+                <p>Prix d'excellence en Numérique et Sciences Informatiques</p>
+            </div>
+            <div class="diploma-card" onclick="openDplomeModal('Prix des Trophées NSI')">
+                <div class="diploma-icon">🥇</div>
+                <h3>Trophées de NSI</h3>
+                <p>Récompense aux Trophées de NSI</p>
+            </div>
+            <div class="diploma-card" onclick="openDplomeModal('Equipier secouriste et chef d\'intervention')">
+                <div class="diploma-icon">🥇</div>
+                <h3>Equipier secouriste</h3>
+                <p>diplome du PSE2 et formation CI</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#about">À Propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="#languages">Langages</a>
+                <a href="#diplomas">Diplômes</a>
+                <a href="#" onclick="scrollToTop()">↑ Haut de page</a>
+            </div>
+            <div class="contact-info">
+                <p>📧 ywan.grd@gmail.com | 📱 +33 06 80 98 82 51</p>
+                <p>📍 Lannion, France | <a href="https://www.linkedin.com/in/ywan-gerard-657851285/">LinkedIn</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="skillModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('skillModal')">&times;</span>
+            <h2 id="skillTitle"></h2>
+            <p id="skillDescription"></p>
+        </div>
+    </div>
+
+    <div id="languageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('languageModal')">&times;</span>
+            <h2 id="languageTitle"></h2>
+            <p id="languageDescription"></p>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling pour les liens de navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fonction pour ouvrir le modal des compétences
+        function openSkillModal(skillName) {
+            const skillDescriptions = {
+                'Développement Web': 'Expertise dans la création de sites web modernes utilisant HTML5, CSS3, JavaScript, et les frameworks comme React, Vue.js. Maîtrise du responsive design et des bonnes pratiques UX.',
+                'Data Science': 'Analyse avancée de données avec Python, R, et les bibliothèques comme Pandas, NumPy, Scikit-learn. Création de modèles de machine learning et visualisation de données.',
+                'Gestion de Projet': 'Pilotage de projets informatiques en méthode Agile et Scrum. Coordination d\'équipes multidisciplinaires et gestion des délais et budgets.',
+                'Design UX/UI': 'Conception d\'interfaces utilisateur intuitives avec Figma, Adobe XD. Réalisation de wireframes, prototypes et tests utilisateurs.',
+                'Cybersécurité': 'Sécurisation des systèmes et réseaux, audit de sécurité, mise en place de politiques de sécurité et sensibilisation aux bonnes pratiques.',
+                'DevOps': 'Automatisation des déploiements avec Docker, Kubernetes, CI/CD pipelines. Maîtrise d\'AWS, Azure et des outils de monitoring.'
+            };
+
+            document.getElementById('skillTitle').textContent = skillName;
+            document.getElementById('skillDescription').textContent = skillDescriptions[skillName] || 'Description détaillée de cette compétence.';
+            document.getElementById('skillModal').style.display = 'block';
+        }
+
+        // Fonction pour ouvrir le modal des langages
+        function openDplomeModal(diplomename) {
+            const languageDescriptions = {
+                'Diplome du JLPT': 'Diplome du JLPT ( Japanese Language Proeficiency Test) N5 en Janvier 2024',
+                'Concours d\'expression orale du Rotary': '3e en finale du Concours d\'expression orale organisée par le Rotary Bretagne-Mayenne en 2023',
+                'Prix de NSI du Lycée Naval': 'Prix du meilleur élève de NSI du Lycée Naval pour l\'année 2023/2024',
+                'Prix des Trophées NSI': 'Prix académique de l\'originalité pour l\'application Saturne (Cf : Python, Github)',
+                'Equipier secouriste et chef d\'intervention': 'Equipier secouriste à la Croix-Rouge française depuis 2024 et chef d\'intervention depuis 2025',
+            };
+
+            document.getElementById('languageTitle').textContent = diplomename;
+            document.getElementById('languageDescription').textContent = languageDescriptions[diplomename] || 'Description détaillée de ce langage.';
+            document.getElementById('languageModal').style.display = 'block';
+        }
+
+        // Fonction pour fermer les modals
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        // Fermer les modals en cliquant à l'extérieur
+        window.onclick = function(event) {
+            const skillModal = document.getElementById('skillModal');
+            const languageModal = document.getElementById('languageModal');
+            if (event.target === skillModal) {
+                skillModal.style.display = 'none';
+            }
+            if (event.target === languageModal) {
+                languageModal.style.display = 'none';
+            }
+        }
+
+        // Fonction pour remonter en haut de page
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Animation au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observer tous les éléments avec animation
+        document.querySelectorAll('.skill-card, .diploma-card, .contact-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        function openInNewTab(url) {
+            window.open(url);
+        }
+    </script>
+</body>
+</html>

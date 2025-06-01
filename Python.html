@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ywan GERARD</title>
+    <link rel ="stylesheet" type = "text/css" href = "style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ywan GERARD</div>
+            <ul class="nav-links">
+                <li><a href="index.html">À Propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#languages">Langages</a></li>
+                <li><a href="#diplomas">Diplômes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="lang-descriptor">
+            <img src="images/python.png" alt="">
+            <h2>language</h2>
+            <h3>Niveau : </h3>
+        </article>
+
+        <section class="project" onclick="openInNewTab('https:\/\/github.com/epsilonkn/Saturne-main-app')">
+            <article>
+                <h2>Saturne</h2>
+                <p>
+                    Saturne est une application de génération de code, orientée sur la création d'interfaces.
+                    Elle vient du projet créé pour le concours des trophées NSI, sur lequel j'ai continué le développement.
+                    le code est découpé entre des fichiers d'interfaces, des fichiers de traitement des données, 
+                    et des fichiers de gestion de fichiers ressources.<br>
+                    L'application est passée par une phase de réflexion/conception, puis par une phase de développement, et enfin 
+                    par une phase de débugage/polissage</p>
+                <p>Technologies : Python, JSON</p>
+                <p>Compétences : Développement logiciel, développement python</p>
+            </article>
+            <div><img src="images/Saturne.png" alt=""></div>
+        </section>
+
+
+        <section class="project" onclick="openInNewTab('https:\/\/github.com/epsilonkn/colony-s-sim')">
+            <article>
+                <h2>Ant Sim</h2>
+                <p>Ant Sim est un jeu de simulation de pseudo-fourmis reprenant le principe des vraies fourmis.
+                    On y retrouve des fourmis cherchant de la nourriture, des ressources, capables de se battre 
+                    et pouvant mourrir de de vieillesse, de faim, ou au combat. On y retrouve aussi une IA "ingénieure"
+                    en charge de développer la colonie : création de nouvelles fourmis, aggrandissement des entrepôts,
+                    et création de défenses.
+                    Ce projet se développe au fur et à mesure du développement de mes compétences
+                </p>
+                <p>Technologie : Python</p>
+                <p>Compétences : développement de jeux-vidéos, développement python, IA, programmation asynchrone en python</p>
+            </article>
+            <div><img src="images/Ant_sim.png" alt=""></div>
+        </section>
+
+        <section class="project" onclick="openInNewTab('https:\/\/github.com/epsilonkn/')">
+            <article>
+                <h2>KNN</h2>
+                <p>Développement de l'algorithme des K-Nearest-Neighbors et du K-means.
+                    J'ai développé ces deux algorithmes dans le cadre d'un projet de cours.
+                    Puis j'ai aussi créé un autre algorithme sur la base du K-means pour en améliorer ses performances.
+                    Pour tester les algorithmes, j'ai utilisé la libraire scikit-learn.
+                </p>
+                <p>Technologies : Python, librairie scikit-learn</p>
+                <p>Compétences : Machine learning, développement python</p>
+            </article>
+            <div><img src="images/kmeans.webp" alt="">
+            <p>source de l'image : bombaySoftware.com</p>
+            </div>
+        </section>
+        <section class="project" onclick="openInNewTab('https:\/\/github.com/epsilonkn/')">
+            <article>
+                <h2>Widget Calendrier</h2>
+                <p>Création d'un widget calendrier pour la librairie CustomTkinter.
+                    Le Widget peut être seul ou accompagné d'une fenêtre d'ajout d'évènements et
+                    il est pleinement compatible avec les interfaces CustomTkinter.
+                </p>
+                <p>technologie : Python</p>
+                <p>Compétences : Développement python, Librairie Tkinter et CustomTkinter</p>
+            </article>
+            <div><img src="images/calendar.png" alt=""></div>
+        </section>
+        <section class="project" onclick="openInNewTab('https:\/\/github.com/epsilonkn/')">
+            <article>
+                <h2>projet</h2>
+                <p>descr
+                </p>
+                <p>technologie : </p>
+                <p>Compétences : </p>
+            </article>
+            <div><img src="" alt=""></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#about">À Propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="#languages">Langages</a>
+                <a href="#diplomas">Diplômes</a>
+                <a href="#" onclick="scrollToTop()">↑ Haut de page</a>
+            </div>
+            <div class="contact-info">
+                <p>📧 ywan.grd@gmail.com | 📱 +33 06 80 98 82 51</p>
+                <p>📍 Lannion, France | <a href="https://www.linkedin.com/in/ywan-gerard-657851285/">LinkedIn</a></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function openInNewTab(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
