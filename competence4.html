@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ywan GERARD</title>
+    <link rel ="stylesheet" type = "text/css" href = "style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ywan GERARD</div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">À Propos</a></li>
+                <li><a href="index.html#skills">Compétences</a></li>
+                <li><a href="index.html#languages">Langages</a></li>
+                <li><a href="index.html#diplomas">Diplômes</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="lang-descriptor">
+            <h2>Gérer des données de l'information</h2>
+        </article>
+
+        <section class="project" onclick="openInNewTab('https:\/\/github.com/epsilonkn/')">
+            <article>
+                <h2>Base de données des élèves de l'IUT</h2>
+                <p>Implémentation d'une base de données contenant les postulants et les élèves de l'IUT pour le DUT informatique.
+                    Nous avons, en binôme, créés le script de création de la base, que nous avons ensuite peuplé. <br>
+                    l'objectif a aussi été dans un second temps de réaliser des études statistiques sur cette base. <br>
+                    Nous avons utilisé python pour normaliser les données et réaliser les études statistiques.
+                </p>
+                <p>Technologies : SQL, python</p>
+                <p>Compétences : SQL, Développement Python, travail en équipe </p>
+            </article>
+            <div><img src="images/no_image.png" alt=""></div>
+        </section>
+
+        <section class="project" onclick="openInNewTab('https:\/\/github.com/epsilonkn/KNN')">
+            <article>
+                <h2>KNN</h2>
+                <p>Développement de l'algorithme des K-Nearest-Neighbors et du K-means.
+                    J'ai développé ces deux algorithmes dans le cadre d'un projet de cours.
+                    Puis j'ai aussi créé un autre algorithme sur la base du K-means pour en améliorer ses performances.
+                    Pour tester les algorithmes, j'ai utilisé la libraire scikit-learn.
+                </p>
+                <p>Technologies : Python, librairie scikit-learn</p>
+                <p>Compétences : Machine learning, développement python, travail en équipe, optimisation d'algorithmes</p>
+            </article>
+            <div><img src="images/kmeans.webp" alt="">
+            <p>source de l'image : bombaySoftware.com</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html#about">À Propos</a>
+                <a href="index.html#skills">Compétences</a>
+                <a href="index.html#languages">Langages</a>
+                <a href="index.html#diplomas">Diplômes</a>
+                <a href="#" onclick="scrollToTop()">↑ Haut de page</a>
+            </div>
+            <div class="contact-info">
+                <p>📧 ywan.grd@gmail.com | 📱 +33 06 80 98 82 51</p>
+                <p>📍 Lannion, France | <a href="https://www.linkedin.com/in/ywan-gerard-657851285/">LinkedIn</a></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function openInNewTab(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>

@@ -47,35 +47,29 @@
     <section id="skills">
         <h2>Mes Compétences</h2>
         <div class="skills-grid">
-            <div class="skill-card" onclick="openSkillModal('Développement Web')">
-                <div class="skill-icon">🌐</div>
-                <h3>Développement Web</h3>
-                <p>Création de sites web modernes et responsives</p>
+            <div class="skill-card" onclick="openInNewTab('competence1.html')">
+                <div class="skill-icon">💻</div>
+                <h3>Réaliser un développement d'application</h3>
             </div>
-            <div class="skill-card" onclick="openSkillModal('Data Science')">
+            <div class="skill-card" onclick="openInNewTab('competence2.html')">
+                <div class="skill-icon">⚡</div>
+                <h3>optimiser des applications informatiques</h3>
+            </div>
+            <div class="skill-card" onclick="openInNewTab('competence3.html')">
+                <div class="skill-icon">🖥️</div>
+                <h3>Administrer des systèmes informatiques communicants complexes</h3>
+            </div>
+            <div class="skill-card" onclick="openInNewTab('competence4.html')">
                 <div class="skill-icon">📊</div>
-                <h3>Data Science</h3>
-                <p>Analyse de données et machine learning</p>
+                <h3>Gérer des données de l'information</h3>
             </div>
-            <div class="skill-card" onclick="openSkillModal('Gestion de Projet')">
+            <div class="skill-card" onclick="openInNewTab('competence5.html')">
                 <div class="skill-icon">📋</div>
-                <h3>Gestion de Projet</h3>
-                <p>Pilotage et coordination d'équipes</p>
+                <h3>Conduire un projet</h3>
             </div>
-            <div class="skill-card" onclick="openSkillModal('Design UX/UI')">
-                <div class="skill-icon">🎨</div>
-                <h3>Design UX/UI</h3>
-                <p>Conception d'interfaces utilisateur</p>
-            </div>
-            <div class="skill-card" onclick="openSkillModal('Cybersécurité')">
-                <div class="skill-icon">🔒</div>
-                <h3>Cybersécurité</h3>
-                <p>Sécurisation des systèmes informatiques</p>
-            </div>
-            <div class="skill-card" onclick="openSkillModal('DevOps')">
-                <div class="skill-icon">⚙️</div>
-                <h3>DevOps</h3>
-                <p>Automatisation et déploiement continu</p>
+            <div class="skill-card" onclick="openInNewTab('competence6.html')">
+                <div class="skill-icon">👥</div>
+                <h3>Travailler dans une équipe informatique</h3>
             </div>
         </div>
     </section>
@@ -285,7 +279,7 @@
         });
 
         function openInNewTab(url) {
-            window.open(url);
+             window.location.href = url;
         }
     </script>
 </body>
