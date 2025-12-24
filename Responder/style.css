@@ -172,6 +172,7 @@ main {
 
 .double-line > div {
     margin: 0px 20px;
+    width: 50%;
 }
 
 .module-learn-article a {
@@ -182,10 +183,6 @@ main {
     color: #04C7BD;
 }
 
-
-.separate {
-    width: 50%;
-}
 
 .dev {
     display: none;
